@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Home</title>
+    <!-- CSS only -->
+    <link
+      rel="stylesheet"
+      href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css"
+    />
+    <link href="fontawesome-pro-5.15.3-web/css/all.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+  </head>
+  <body>
+    <div class="header">
+      <div class="logoTitle">
+        <img class="iconImg" src="iconL.png" />
+        <h2 class="iconTitle">MINIMAL RESTO</h2>
+      </div>
+
+      <div class="nav">
+        <h3 id="menuBtn">MENU</h3>
+        <h3 id="aboutBtn">ABOUT</h3>
+        <h3 id="contactBtn">CONTACT US</h3>
+      </div>
+    </div>
+
+    <div class="main-body">
+      <div class="scrollDownIcon">
+        <i class="fas fa-mouse"></i>
+        <i class="fas fa-arrow-down"></i>
+        <span>Scroll Down</span>
+      </div>
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide s1BG">
+            <div class="slide-texts">
+              <div class="num-slide-texts">01</div>
+              <div id="menuText" class="desc-slide-texts">MENU</div>
+            </div>
+            <img
+              class="s1Img rotating main-images"
+              src="https://assets.website-files.com/60f00166d588d3187eb24cef/611373bcf89e750ff7d38421_wills.png"
+            />
+          </div>
+          <div class="swiper-slide s2BG">
+            <div class="slide-texts">
+              <div class="num-slide-texts">02</div>
+              <div id="aboutText" class="desc-slide-texts">ABOUT</div>
+            </div>
+            <img
+              class="s2Img rotating main-images"
+              src="https://assets.website-files.com/60f00166d588d3187eb24cef/611373bdc832dc0f1c380f47_rijks.png"
+            />
+          </div>
+          <div class="swiper-slide s3BG">
+            <div class="slide-texts">
+              <div class="num-slide-texts">03</div>
+              <div id="contactText" class="desc-slide-texts">CONTACT</div>
+            </div>
+            <img
+              class="s3Img rotating main-images"
+              src="https://assets.website-files.com/60f00166d588d3187eb24cef/6127854137960d75aaf44494_Bord-4.png"
+            />
+          </div>
+          ...
+        </div>
+
+        <div class="swiper-scrollbar"></div>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>

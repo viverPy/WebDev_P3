@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+    <link href="fontawesome-pro-5.15.3-web/css/all.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <title>Menu</title>
+  </head>
+  <body>
+    <div class="scrollDownIcon">
+      <i class="fas fa-mouse"></i>
+      <i class="fas fa-arrow-down"></i>
+      <span>Scroll Down</span>
+    </div>
+
+    <div class="draggableIcon">
+      <i class="fas fa-mouse" style="color: #ffffff"></i>
+      <i class="fas fa-hand-paper" style="color: #ffffff"></i>
+      <span style="color: #ffffff">Draggable Menu</span>
+    </div>
+
+    <div class="header s1BG">
+      <div class="logoTitle">
+        <img class="iconImg iconImg2" src="iconL.png" />
+        <h2 class="iconTitle">MINIMAL RESTO</h2>
+      </div>
+
+      <div class="nav">
+        <h3 id="homeBtn">HOME</h3>
+        <h3 id="aboutBtn">ABOUT</h3>
+        <h3 id="contactBtn">CONTACT US</h3>
+      </div>
+    </div>
+    <img
+      class="s1Img rotating main-images absolute-container"
+      src="https://assets.website-files.com/60f00166d588d3187eb24cef/611373bcf89e750ff7d38421_wills.png"
+    />
+    <div class="s1BG maxWidthHeight">
+      <div class="slide-texts">
+        <div id="menu" class="num-slide-texts">01</div>
+        <div class="desc-slide-texts">MENU</div>
+
+        <div class="container container-bottom menu-container">
+          <div class="row justify-content-center">
+            <div class="col">
+              <button type="button" class="btn btn-info detailsBtn">
+                Show details
+              </button>
+            </div>
+          </div>
+
+          <div class="row justify-content-center">
+            <div class="col-3 perMenu">
+              <center>
+                <img
+                  class="menuFoodImage"
+                  src="https://media-cdn.tripadvisor.com/media/photo-p/15/32/bf/23/pork-hock.jpg"
+                  alt="Image"
+                />
+                <br />
+                <div class="perMenu__details displayNone">
+                  <p class="perMenu__details__title">Pork Hock</p>
+                  <p class="perMenu__details__price">₱ 900.00</p>
+                </div>
+              </center>
+            </div>
+
+            <div class="col-3 perMenu">
+              <center>
+                <img
+                  class="menuFoodImage"
+                  src="https://media-cdn.tripadvisor.com/media/photo-s/06/ca/a5/49/son-in-law-eggs.jpg"
+                  alt="Image"
+                />
+                <br />
+                <div class="perMenu__details displayNone">
+                  <p class="perMenu__details__title">Son in Law Eggs</p>
+                  <p class="perMenu__details__price">₱ 499.00</p>
+                </div>
+              </center>
+            </div>
+
+            <div class="col-3 perMenu">
+              <center>
+                <img
+                  class="menuFoodImage"
+                  src="https://media-cdn.tripadvisor.com/media/photo-p/17/87/9e/df/pancake-bacon-blueberry.jpg"
+                  alt="Image"
+                />
+                <br />
+                <div class="perMenu__details displayNone">
+                  <p class="perMenu__details__title">Pancake Bacon Blueberry</p>
+                  <p class="perMenu__details__price">₱ 785.00</p>
+                </div>
+              </center>
+            </div>
+          </div>
+
+          <div class="row justify-content-center">
+            <div class="col-3 perMenu">
+              <center>
+                <img
+                  class="menuFoodImage"
+                  src="https://media-cdn.tripadvisor.com/media/photo-s/1c/15/71/fd/main-course-beef.jpg"
+                  alt="Image"
+                />
+                <br />
+                <div class="perMenu__details displayNone">
+                  <p class="perMenu__details__title">Main Course Beef</p>
+                  <p class="perMenu__details__price">₱ 1349.00</p>
+                </div>
+              </center>
+            </div>
+
+            <div class="col-3 perMenu">
+              <center>
+                <img
+                  class="menuFoodImage"
+                  src="https://media-cdn.tripadvisor.com/media/photo-s/12/99/13/96/waffles.jpg"
+                  alt="Image"
+                />
+                <br />
+                <div class="perMenu__details displayNone">
+                  <p class="perMenu__details__title">Waffles</p>
+                  <p class="perMenu__details__price">₱ 350.00</p>
+                </div>
+              </center>
+            </div>
+
+            <div class="col-3 perMenu">
+              <center>
+                <img
+                  class="menuFoodImage"
+                  src="https://media-cdn.tripadvisor.com/media/photo-s/16/da/1c/7b/short-rib.jpg"
+                  alt="Image"
+                />
+                <br />
+                <div class="perMenu__details displayNone">
+                  <p class="perMenu__details__title">Short Rib</p>
+                  <p class="perMenu__details__price">₱ 1199.00</p>
+                </div>
+              </center>
+            </div>
+          </div>
+
+          <div class="row justify-content-center">
+            <div class="col-3 perMenu">
+              <center>
+                <img
+                  class="menuFoodImage"
+                  src="https://media-cdn.tripadvisor.com/media/photo-s/11/58/b9/97/organic-local-cramer.jpg"
+                  alt="Image"
+                />
+                <br />
+                <div class="perMenu__details displayNone">
+                  <p class="perMenu__details__title">Organic Local Cramer</p>
+                  <p class="perMenu__details__price">₱ 765.00</p>
+                </div>
+              </center>
+            </div>
+
+            <div class="col-3 perMenu">
+              <center>
+                <img
+                  class="menuFoodImage"
+                  src="https://media-cdn.tripadvisor.com/media/photo-s/09/23/48/d4/buon-ricordo.jpg"
+                  alt="Image"
+                />
+                <br />
+                <div class="perMenu__details displayNone">
+                  <p class="perMenu__details__title">Buon Ricordo</p>
+                  <p class="perMenu__details__price">₱ 999.00</p>
+                </div>
+              </center>
+            </div>
+
+            <div class="col-3 perMenu">
+              <center>
+                <img
+                  class="menuFoodImage"
+                  src="https://media-cdn.tripadvisor.com/media/photo-s/02/8e/5a/72/filename-blini-wonder.jpg"
+                  alt="Image"
+                />
+                <br />
+                <div class="perMenu__details displayNone">
+                  <p class="perMenu__details__title">Blini Wonder</p>
+                  <p class="perMenu__details__price">₱ 770.00</p>
+                </div>
+              </center>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>

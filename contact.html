@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+    <link href="fontawesome-pro-5.15.3-web/css/all.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+      $(function () {
+        $("#dialog").dialog({
+          position: { my: "left", at: "left+20 top+300", of: window },
+        });
+      });
+      $(function () {
+        $("#dialog2").dialog({
+          position: { my: "left", at: "left+20 top+500", of: window },
+        });
+      });
+    </script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="scrollDownIcon">
+      <i class="fas fa-mouse" style="color: #ffffff"></i>
+      <i class="fas fa-arrow-down" style="color: #ffffff"></i>
+      <span style="color: #ffffff">Scroll Down</span>
+    </div>
+    <div class="header s3BG">
+      <div class="logoTitle">
+        <img class="iconImg iconImg2" src="iconL.png" />
+        <h2 class="iconTitle">MINIMAL RESTO</h2>
+      </div>
+
+      <div class="nav">
+        <h3 id="homeBtn">HOME</h3>
+        <h3 id="menuBtn">MENU</h3>
+        <h3 id="aboutBtn">ABOUT</h3>
+      </div>
+    </div>
+    <img
+      class="s3Img rotating main-images absolute-container"
+      src="https://assets.website-files.com/60f00166d588d3187eb24cef/6127854137960d75aaf44494_Bord-4.png"
+    />
+
+    <div class="s3BG maxWidthHeight">
+      <div class="slide-texts">
+        <div id="menu" class="num-slide-texts">03</div>
+        <div class="desc-slide-texts">CONTACT</div>
+      </div>
+
+      <div class="container contact-container container-bottom">
+        <div class="row">
+          <div class="col">
+            <p class="contact-title">GET A DISCOUNT!</p>
+            <p class="contact-title2">(JUST FILL UP THE FOLLOWING)</p>
+          </div>
+        </div>
+        <form id="forms" action="">
+          <div class="row justify-content-center">
+            <div class="col-2">
+              <p>Full Name</p>
+            </div>
+            <div class="col-3">
+              <input type="text" id="fullName" required />
+            </div>
+          </div>
+
+          <div class="row justify-content-center">
+            <div class="col-2">
+              <p>Email</p>
+            </div>
+            <div class="col-3">
+              <input type="email" id="email" required />
+            </div>
+          </div>
+
+          <div class="row justify-content-center">
+            <div class="col-2">
+              <p>Date of Birth</p>
+            </div>
+            <div class="col-3">
+              <div id="datepicker"></div>
+            </div>
+          </div>
+
+          <div class="row justify-content-center">
+            <div class="col-2">
+              <p>Gender</p>
+            </div>
+            <div class="col-3">
+              <fieldset>
+                <input type="radio" name="radio-1" id="radio-1" checked />
+                <label for="radio-1">Male</label><br />
+                <input type="radio" name="radio-1" id="radio-2" />
+                <label for="radio-2">Female</label><br />
+                <input type="radio" name="radio-1" id="radio-3" />
+                <label for="radio-3">Others</label><br />
+              </fieldset>
+            </div>
+          </div>
+
+          <div class="row justify-content-center">
+            <div class="col-5">
+              <input
+                class="ui-button ui-widget ui-corner-all"
+                type="submit"
+                value="Submit"
+              />
+            </div>
+          </div>
+
+          <div id="dialog" title="Contact Number">
+            <p>09995868692</p>
+          </div>
+
+          <div id="dialog2" title="Contact Email">
+            <p>minimal@gmail.com</p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
